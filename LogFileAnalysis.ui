@@ -49,6 +49,9 @@
             <property name="text">
              <string>Get Parameter List</string>
             </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
             <attribute name="buttonGroup">
              <string notr="true">buttonGroup_2</string>
             </attribute>
@@ -130,20 +133,13 @@ color:rgb(100,100,100);
                </widget>
               </item>
               <item>
-               <spacer name="horizontalSpacer">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
+               <widget class="QPushButton" name="LeftPayloadpushButton">
+                <property name="maximumSize">
                  <size>
-                  <width>40</width>
-                  <height>20</height>
+                  <width>140</width>
+                  <height>16777215</height>
                  </size>
                 </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QPushButton" name="LeftPayloadpushButton">
                 <property name="font">
                  <font>
                   <pointsize>9</pointsize>
@@ -205,20 +201,13 @@ color:rgb(100,100,100);
                </widget>
               </item>
               <item>
-               <spacer name="horizontalSpacer_3">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
+               <widget class="QPushButton" name="RightPayloadpushButton">
+                <property name="maximumSize">
                  <size>
-                  <width>40</width>
-                  <height>20</height>
+                  <width>140</width>
+                  <height>16777215</height>
                  </size>
                 </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QPushButton" name="RightPayloadpushButton">
                 <property name="font">
                  <font>
                   <pointsize>9</pointsize>
@@ -300,7 +289,7 @@ color:white;
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="ComparePayloadpushButton">
             <property name="font">
              <font>
               <pointsize>9</pointsize>
@@ -340,7 +329,7 @@ background-color:rgb(218,218,218);
 }</string>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="ParameterList">
            <attribute name="title">
@@ -1998,7 +1987,7 @@ color:white;
            <enum>QTabWidget::Triangular</enum>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="AddCANSignal">
            <attribute name="title">
