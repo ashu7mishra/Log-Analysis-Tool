@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1114</width>
-    <height>855</height>
+    <width>1130</width>
+    <height>870</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -98,8 +98,17 @@
             <property name="text">
              <string/>
             </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>37</height>
+             </size>
+            </property>
             <property name="toolButtonStyle">
              <enum>Qt::ToolButtonIconOnly</enum>
+            </property>
+            <property name="autoRaise">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
@@ -129,6 +138,16 @@ color:rgb(100,100,100);
                 </property>
                 <property name="text">
                  <string>Left Payload</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="LeftPayloadPath">
+                <property name="font">
+                 <font>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
                 </property>
                </widget>
               </item>
@@ -197,6 +216,16 @@ color:rgb(100,100,100);
                 </property>
                 <property name="text">
                  <string>Right Payload</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="RightPayloadPath">
+                <property name="font">
+                 <font>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
                 </property>
                </widget>
               </item>
@@ -329,7 +358,7 @@ background-color:rgb(218,218,218);
 }</string>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="ParameterList">
            <attribute name="title">
@@ -1793,7 +1822,7 @@ color:white;
               <property name="title">
                <string>Keywords Search Result</string>
               </property>
-              <widget class="QWidget" name="">
+              <widget class="QWidget" name="layoutWidget">
                <property name="geometry">
                 <rect>
                  <x>11</x>
@@ -2451,7 +2480,9 @@ color:white;
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="reset.png"/>
+ </resources>
  <connections/>
  <buttongroups>
   <buttongroup name="buttonGroup_2"/>
